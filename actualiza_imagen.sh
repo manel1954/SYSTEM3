@@ -25,6 +25,7 @@ pi
 
                         sudo chmod 777 -R /home/pi/AUTOARRANQUE_SYSTEM
                         
+                        
 
                         
 
