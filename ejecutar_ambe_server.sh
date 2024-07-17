@@ -21,7 +21,7 @@ cd /home/pi/AMBE_SERVER
 sudo killall AMBEserver
 sleep 1
 cd AMBE_SERVER
-xterm -geometry 58x9+1481+485 -bg blue -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_AMBE_SERVER -e ./AMBEserver -p $puerto_router -i $puerto_modem -s $baut_rate
+xterm -geometry 73x14+22+48 -bg blue -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_AMBE_SERVER -e ./AMBEserver -p $puerto_router -i $puerto_modem -s $baut_rate
 
 
 cd /home/pi/Desktop
@@ -33,6 +33,6 @@ sed -i "11c AMBE_SERVER=OFF" /home/pi/status.ini
 cd /home/pi
 sudo cp Abrir_ambe_server.desktop /home/pi/Desktop
 sleep 2
-sudo rm /home/pi/Abrir_ambe_server.desktop				
+sudo rm /home/pi/Abrir_ambe_server.desktop			
 						
 
