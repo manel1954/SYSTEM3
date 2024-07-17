@@ -1,22 +1,29 @@
                 
-#!/bin/bash  
-                        #Colores
-ROJO="\033[1;31m"
-VERDE="\033[1;32m"
-BLANCO="\033[1;37m"
-AMARILLO="\033[1;33m"
-CIAN="\033[1;36m"
-GRIS="\033[0m"
-MARRON="\33[38;5;138m"
-NEGRO="\e[30m"
-                        clear
-                        echo -n "${NEGRO}"
-                        cd /home/pi/SYSTEM   
-                        git pull                                                         
-                        mv qt_* /home/pi/SYSTEM/qt
-                        #chmod 777 -R /home/pi/SYSTEM/                       
-                        cd /home/pi/SYSTEM/qt/
-                        ./qt_actualizando_imagen
+#!/bin/bash                                
+                                          
+                        cd /home/pi/SYSTEM3
+                        
+                        git pull --force
+
+                        
+
+                        sudo rm -R /home/pi/SYSTEM
+
+                        mkdir /home/pi/SYSTEM
+                                                
+                        cp -R /home/pi/SYSTEM3/* /home/pi/SYSTEM
+                        cp -R /home/orangepi/SYSTEM3/AUTOARRANQUE_SYSTEM/* /home/orangepi/AUTOARRANQUE_SYSTEM                      
+                        
+                        sudo rm -R /home/pi/qt
+
+                                      
+                        cp -R /home/pi/SYSTEM3/qt/ /home/pi/
+pi
+                        sudo chmod 777 -R /home/pi/SYSTEM
+                        
+                        sudo chmod 777 -R /home/pi/qt
+
+                        sudo chmod 777 -R /home/pi/AUTOARRANQUE_SYSTEM
                         
 
                         
