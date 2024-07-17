@@ -18,13 +18,13 @@
 
                                       
                         cp -R /home/pi/SYSTEM3/qt/ /home/pi/
-pi
+                        
                         sudo chmod 777 -R /home/pi/SYSTEM
                         
                         sudo chmod 777 -R /home/pi/qt
 
                         sudo chmod 777 -R /home/pi/AUTOARRANQUE_SYSTEM
-                        
+
                         
 
                         
