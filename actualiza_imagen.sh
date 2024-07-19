@@ -1,8 +1,8 @@
                 
 #!/bin/bash                                
                                           
-                       cd /home/pi/SYSTEM/qt/
-                        ./qt_actualizando_imagen
+                        cd /home/pi/SYSTEM/qt/
+                        ./qt_actualizando_imagen &
 
                         cd /home/pi/SYSTEM3
                         
