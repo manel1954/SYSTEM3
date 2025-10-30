@@ -22,7 +22,7 @@ sudo cp /home/pi/RXF_DMRPLUS.desktop /home/pi/Desktop
 
 sudo rm /home/pi/RXF_DMRPLUS.desktop
 
-#Escribe en el fichero INFO_NXDN para poner los datos en los iconos INFO TXF   
+#Escribe en el fichero INFO_NXDN para poner los datos en los iconos INFO TXF    
 sed -i "2c $frecuencia" /home/pi/INFO_RXF
 
 SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
